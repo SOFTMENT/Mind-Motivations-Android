@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_back"
+    android:backgroundTint="#51DCDFE3"
+    android:layout_marginBottom="12dp"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Music"
+            android:textSize="15sp"
+            android:fontFamily="@font/montmedium"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/baseline_play_circle_24"
+                />
+            <TextView
+                android:id="@+id/tracks"
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montregular"
+                android:text="5 Tracks"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+            
+    </LinearLayout>
+
+    <RelativeLayout
+        android:backgroundTint="#181B2B"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/edittext_back"
+
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

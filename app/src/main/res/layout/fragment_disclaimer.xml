@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.DisclaimerFragment">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="#9a9a9a"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Important warnings for using our programs..."
+        android:textColor="#5856D6"
+        android:fontFamily="@font/montbold"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Disclaimer"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montbold"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montregular"
+        android:text="Never use the audio programs whilst driving a vehicle, operating machinery, or doing anything that requires your full attention for safety's sake.\n\nMENTAL HEALTH CONDITIONS Any person suffering from a significant mental health problem such as Schizophrenia, Multiple Personality Disorder, Psychosis, Bipolar Disorder, or Delusional Disorder, whether the disorder be congenital or otherwise SHOULD NOT USE THESE MP3s WITHOUT PRIOR CONSULTATION WITH THEIR PHYSICIAN. The information and guidance given is not intended to diagnose, treat, or cure any disease or illness.\n\nNONE OF THESE MP3s ARE INTENDED TO REPLACE MEDICAL TREATMENTS OR PHARMACEUTICAL MEDICATIONS. If you are unsure about the suitability of these recordings, please consult a medical professional before listening."
+        android:textColor="#888"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MembershipActivity">
+        <androidx.cardview.widget.CardView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:id="@+id/back"
+            >
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_below="@+id/logo"
+            android:text="Get Access To All Tracks Today"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montbold"
+            android:id="@+id/titleHead"
+            />
+
+        <RelativeLayout
+            android:id="@+id/monthlyRR"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_below="@+id/titleHead"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_back"
+            android:backgroundTint="@color/white"
+            >
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/radioBtn1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MONTHLY"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$12.99"
+                    android:fontFamily="@font/montregular"
+                    android:textSize="12sp"
+                    android:textColor="#999"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/yearlyRR"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_below="@+id/monthlyRR"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_back"
+            android:backgroundTint="@color/white"
+            >
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/radioBtn2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YEARLY"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$99.99"
+                    android:fontFamily="@font/montregular"
+                    android:textSize="12sp"
+                    android:textColor="#999"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/btn_back"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#FF9500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_height="22dp">
+                <TextView
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Most Popular"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montregular"
+
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/yearlyRR"
+            android:layout_marginTop="32dp"
+            android:text="Subscribe Now"
+            android:fontFamily="@font/montsemibold"
+            android:textSize="15sp"
+            android:textColor="#282E47"
+            android:id="@+id/subscribeBtn"
+            />
+
+
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/subscribeBtn"
+            android:fontFamily="@font/montregular"
+            android:text="Payment will be charged to your iTunes account at confirmation of purchase. Subscriptions will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal, in accordance with your plan, within 24 hours prior to the end of the current period. You can manage or turn off auto-renew in your Apple ID account settings anytime after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable."
+            android:textAlignment="center"
+            android:textColor="#aaa"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/notes"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:id="@+id/restore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restore"
+                android:fontFamily="@font/montregular"
+                android:textColor="#007AFF"
+                android:textSize="11sp"
+                />
+            <TextView
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:fontFamily="@font/montsemibold"
+                android:textColor="@color/white"
+                android:layout_marginStart="4dp"
+                />
+            <TextView
+                android:id="@+id/termsOfUse"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms Of Use"
+                android:fontFamily="@font/montregular"
+                android:textColor="#007AFF"
+                android:textSize="11sp"
+                />
+            <TextView
+
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="And"
+                android:fontFamily="@font/montregular"
+                android:textColor="@color/white"
+                android:layout_marginStart="4dp"
+                />
+            <TextView
+                android:id="@+id/privacyPolicy"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:fontFamily="@font/montregular"
+                android:textColor="#007AFF"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

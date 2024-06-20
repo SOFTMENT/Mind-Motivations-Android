@@ -1,0 +1,53 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#9EA1D0"
+tools:context=".Fragment.MusicInformationFragment">
+
+
+<RelativeLayout
+    android:layout_width="100dp"
+    android:layout_height="3dp"
+    android:background="@drawable/btn_back"
+    android:backgroundTint="#fff"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:text="About"
+    android:textColor="@color/white"
+    android:fontFamily="@font/montbold"
+    android:textSize="16sp"
+    />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="14sp"
+            android:id="@+id/aboutText"
+            android:textColor="#fff"
+            android:fontFamily="@font/montregular"
+
+            android:text="This App was created by experienced hypnotherapist and co-owner of Mind Motivations, Giovanni Lordi. Since 1996, Mind Motivations has been providing people all around the world with the tools to improve their lives and discover more about hypnosis and self-help methods. We have helped thousands of customers with our extensive catalogue of hypnotherapy recordings. They are effective, trusted, and proven products for making changes.\n\nEvery single product that you find on this app or Mind Motivations website has been designed to help people. Our first and foremost goal with everything that we do is to provide people with proven tools to help change their life. Whether it be a hypnosis program to build confidence, a meditation to find answers, or a music album to promote relaxation, we are proud of the fact that what you will find here is a full and comprehensive collections of quality self-improvement products."
+            />
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

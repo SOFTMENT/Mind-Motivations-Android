@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/btn_back"
+
+    android:backgroundTint="#333C5C"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+
+        app:riv_corner_radius_top_right="12dp"
+        app:riv_corner_radius_top_left="12dp"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montsemibold"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:lines="1"
+        android:text="TECHNIQUES"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/baseline_play_circle_24"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montregular"
+            android:layout_marginStart="4dp"
+
+            android:textColor="#A6FFFFFF"
+            android:text="15 Tracks"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

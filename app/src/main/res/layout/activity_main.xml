@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <in.softment.mindmotivation.Util.NonSwipeAbleViewPager
+        android:background="@color/white"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/tabLayout"
+        android:layout_height="match_parent" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabTextAppearance="@style/TabLayoutText"
+        app:tabTextColor="@color/tab_layout"
+        app:tabBackground="@color/sub_main_color"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFAFA"
+        app:tabGravity="fill"
+        app:tabIconTint="@color/tab_layout"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/transparent"
+
+        />
+
+</RelativeLayout>

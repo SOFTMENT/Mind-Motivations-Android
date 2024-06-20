@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/btn_back"
+    android:backgroundTint="@android:color/transparent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_back"
+    android:backgroundTint="@android:color/transparent"
+    android:orientation="horizontal"
+    
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+
+        app:riv_corner_radius="8dp"
+
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montmedium"
+        android:textColor="@color/white"
+
+        android:lines="1"
+        android:text="TECHNIQUES"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/baseline_access_time_24"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montregular"
+            android:layout_marginStart="4dp"
+
+            android:textColor="#aaa"
+            android:text="5 minutes"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/favView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/fav_back"
+        >
+        <ImageView
+            android:id="@+id/favImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/love"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

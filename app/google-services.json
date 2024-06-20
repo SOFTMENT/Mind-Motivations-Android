@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "810309957942",
+    "project_id": "mind-motivations",
+    "storage_bucket": "mind-motivations.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810309957942:android:1dd4810b4d69bd31451b97",
+        "android_client_info": {
+          "package_name": "in.softment.mindmotivation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810309957942-5pr7icjl2jsc48mmcur0fg05gdivufdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN7fnBWmnUefGJHu0pl169MR184ZDVLys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810309957942-5pr7icjl2jsc48mmcur0fg05gdivufdg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "810309957942-4krjuiladbusp7j13eijfvagiot0k7q2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.softment.Mind-Motivations"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

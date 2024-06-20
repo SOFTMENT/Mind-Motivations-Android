@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_color"
+    tools:context=".Fragment.ExploreFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/category"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montsemibold"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        android:id="@+id/notification"
+        >
+        <ImageView
+            android:src="@drawable/ic_outline_notifications_none_24"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:lines="1"
+        android:drawableStart="@drawable/ic_outline_search_24"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawablePadding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/notification"
+        android:background="@drawable/edittext_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Search here"
+        android:fontFamily="@font/montregular"
+        android:textColorHint="#fafafa"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:id="@+id/search"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerview"
+
+        />
+
+    <TextView
+        android:id="@+id/noCategoryAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No categories available"
+        android:fontFamily="@font/montmedium"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        />
+</RelativeLayout>

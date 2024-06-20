@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".Fragment.ProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/topLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/category"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montsemibold"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profileLL"
+        android:backgroundTint="#20263F"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_below="@+id/topLL"
+        android:layout_marginTop="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vijay Rathore"
+            android:fontFamily="@font/montsemibold"
+            android:textColor="@color/white"
+            android:layout_marginTop="54dp"
+            android:id="@+id/name"
+            />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="support@softment.in"
+            android:fontFamily="@font/montregular"
+            android:textColor="#cccccc"
+            android:id="@+id/email"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topLL"
+        android:src="@drawable/logo"
+        android:layout_marginTop="34dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/profileLL"
+        android:layout_marginTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/notification"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/notification2"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notification Centre"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/about"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/aboutus"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/privacyPolicy"
+
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/privacypolicy"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/termsOfUse"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/termsandconditions"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms &amp; Conditions"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/faqs"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/faqs"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAQs"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/disclaimer"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/disclaimer"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disclaimer"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/help"
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/helpcentre"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help Centre"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/deleteAccount"
+
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/delete"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/logout"
+
+            >
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#20263F"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/logout"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montmedium"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    
+</RelativeLayout>
+</ScrollView>

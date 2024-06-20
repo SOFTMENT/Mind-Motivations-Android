@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SignUpActivity">
+        <androidx.cardview.widget.CardView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:id="@+id/back"
+            >
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                />
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:src="@drawable/signinpageimage"
+            android:scaleType="centerCrop"
+            android:id="@+id/headImage"
+            />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/headImage"
+            android:layout_marginTop="-40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_below="@+id/logo"
+            android:text="Let' Get Started"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montbold"
+            android:id="@+id/titleHead"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/titleHead"
+            android:text="Create your account with Mind Motivations"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montregular"
+            android:id="@+id/subHeading"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/subHeading"
+            android:text="Time for inner peace and supporting healthier minds with meditation and hypnosis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"
+            android:textColor="#CBCBCB"
+            android:fontFamily="@font/montregular"
+            android:id="@+id/subHeading2"
+            />
+        <EditText
+            android:drawableStart="@drawable/ic_outline_person_2_24"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/subHeading2"
+            android:background="@drawable/edittext_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="24dp"
+            android:hint="Full Name"
+            android:fontFamily="@font/montregular"
+            android:textColorHint="#fafafa"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/userName"
+            />
+
+        <EditText
+            android:drawableStart="@drawable/ic_outline_email_24"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/userName"
+            android:background="@drawable/edittext_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:hint="Email Address"
+            android:fontFamily="@font/montregular"
+            android:textColorHint="#fafafa"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailAddress"
+            />
+
+        <EditText
+
+            android:drawableStart="@drawable/ic_outline_lock_24"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/emailAddress"
+            android:background="@drawable/edittext_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:fontFamily="@font/montregular"
+            android:textColorHint="#fafafa"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password"
+            android:background="@drawable/btn_back"
+            android:text="SIGN UP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:id="@+id/signup"
+            android:fontFamily="@font/montsemibold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/signup"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:fontFamily="@font/montregular"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/login"
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login?"
+                android:fontFamily="@font/montsemibold"
+                android:textColor="@color/btn_color"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
